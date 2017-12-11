@@ -1,0 +1,27 @@
+html, body {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.calculator {
+  width: 400px;
+  height: 700px;
+}
+
+.calculator div {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  border: 1px #ccc dotted;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #eee;
+  display: inline-block;
+}
+
+.btn
