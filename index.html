@@ -15,25 +15,29 @@
 <body>
 
 <div id="Calculator">
-  <div id="title"></div>
-  <div id="results"></div>
-  <div class="btn" id="clear"></div>
-  <div class="btn" id="divide"></div>
-  <div class="btn" id="times"></div>
-  <div class="btn" id="7"></div>
-  <div class="btn" id="8"></div>
-  <div class="btn" id="9"></div>
-  <div class="btn" id="minus"></div>
-  <div class="btn" id="4"></div>
-  <div class="btn" id="5"></div>
-  <div class="btn" id="6"></div>
-  <div class="btn" id="plus"></div>
-  <div class="btn" id="1"></div>
-  <div class="btn" id="2"></div>
-  <div class="btn" id="3"></div>
-  <div class="btn" id="equals"></div>
-  <div class="btn" id="0"></div>
-  <div class="btn" id="dot"></div>
+  <div id="title"><h1>CALCULATOR</div>
+    <form>
+      <input type="text" id="results" class="results"></input>
+    </form>
+      <form>
+      <button class="btn longBtn" id="clear" onclick="clear()"><h1>Clear<h1></button>
+      <button class="btn" id="divide" onclick="divide()"><h1>%</h1></button>
+      <button class="btn" id="times" onclick="multiply()"><h1>x</h1></button>
+      <button class="btn" id="7" onclick="numSeven()"><h1>7</h1></button>
+      <button class="btn" id="8" onclick="numEight()"><h1>8</h1></button>
+      <button class="btn" id="9" onclick="numNine()"><h1>9</h1></button>
+      <button class="btn" id="subtract" onclick="subtract()"><h1>-</h1></button>
+      <button class="btn" id="4" onclick="numFour()"><h1>4</h1></button>
+      <button class="btn" id="5" onclick="numFive()"><h1>5</h1></button>
+      <button class="btn" id="6" onclick="numSix()"><h1>6</h1></button>
+      <button class="btn" id="add" onclick="add()"><h1>+</h1></button>
+      <button class="btn" id="1" onclick="numOne()"><h1>1</h1></button>
+      <button class="btn" id="2" onclick="numTwo()"><h1>2</h1></button>
+      <button class="btn" id="3" onclick="numThree()"><h1>3</h1></button>
+      <button class="btn" id="equals" onclick="equals()"><h1>=</h1></button>
+      <button class="btn longBtn" id="0" onclick="numZero()"><h1>0</h1></button>
+      <button class="btn" id="dot" onclick="dot()"><h1>.</h1></button>
+    </form>
 
 </div>
 

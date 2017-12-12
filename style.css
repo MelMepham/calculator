@@ -8,20 +8,35 @@ body {
   justify-content: center;
 }
 
-.calculator {
+.calculator div {
   width: 400px;
   height: 700px;
+  margin:10px;
 }
 
-.calculator div {
+.btn {
   width: 100px;
   height: 100px;
   min-width: 100px;
-  border: 1px #ccc dotted;
+  border: 1px #C016C3 dotted;
   margin: 10px;
   border-radius: 50%;
-  background-color: #eee;
+  background-color: #FF6CFF;
   display: inline-block;
 }
 
-.btn
+.results {
+width: 472px;
+height: 100px;
+border: 1px #C016C3 dotted;
+margin: 10px;
+border-radius: 2%;
+}
+
+.longBtn {
+  width: 224px !important;
+}
+
+.highBtn {
+height: 224px !important;
+}
