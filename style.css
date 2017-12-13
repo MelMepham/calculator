@@ -2,19 +2,26 @@ html, body {
   height: 100%;
 }
 
-body {
-  display: flex;
+
+
+calc {
+  display: -webkit-flex; /* Safari */
   align-items: center;
   justify-content: center;
-}
-
-.calculator div {
   width: 400px;
   height: 700px;
-  margin:10px;
+  padding: 20px;
+  margin:20px;
 }
 
-.btn {
+.btnClass {
+  width: 500px;
+  height: 700px;
+
+}
+
+
+.numBtn {
   width: 100px;
   height: 100px;
   min-width: 100px;
@@ -22,15 +29,29 @@ body {
   margin: 10px;
   border-radius: 50%;
   background-color: #FF6CFF;
-  display: inline-block;
+}
+
+.eqBtn {
+  width: 100px;
+  height: 100px;
+  min-width: 100px;
+  border: 1px #C016C3 dotted;
+  margin: 10px;
+  border-radius: 50%;
+  background-color: #FF6CFF;
 }
 
 .results {
-width: 472px;
+width: 400px;
 height: 100px;
 border: 1px #C016C3 dotted;
 margin: 10px;
 border-radius: 2%;
+}
+
+.title {
+width: 400px;
+margin: 10px;
 }
 
 .longBtn {

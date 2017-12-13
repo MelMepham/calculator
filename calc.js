@@ -1,39 +1,28 @@
-document.addEventListener('DOMContentLoaded', start)
 
-function start () {
-  bindEventListeners(document.getElementsByClassName('calculator')[0].children)
+
+var buttons =  document.getElementsByClassName('numBtn')
+for (var i = 0; i < buttons.length; i++) {
+  buttons[i].addEventListener('click', function(e) {
+    document.getElementById('results').innerHTML = (e.target.value)
+  })
 }
 
-numZero() {
-  document.getElementById("results").innerHTML = 1
+function equals() {
+
 }
 
-//numOne() {}
+function add() {
 
-//numTwo() {}
+}
 
-//numThree() {}
+function divide() {
 
-//numFour() {}
+}
 
-//numFive
+function subtract() {
 
-//numSix
+}
 
-//numSeven
-
-//numEight
-
-//numNine
-
-//clear
-
-//subtract
-
-//add
-
-//divide
-
-//multiply
-
-//equals
+function multiply() {
+  
+}
