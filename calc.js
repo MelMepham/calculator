@@ -6,8 +6,8 @@ function start() {
 
 const NUMS = "0123456789"
 const OPS = "+-/*"
-var eq = []
-var total = 0
+// var eq = []
+var total = ""
 
 
 function addEventListeners() {
@@ -19,22 +19,18 @@ function addEventListeners() {
 
 function useButton(calcNum) {
   if (calcNum === "AC") {
-    calc.reset()
-    return
+    document.getElementById("results").innerText = total = "";
   }
-  if (calcNum === NUMS) { // create string of numbers, add string to var eq
-    console.log(calcNum)
+  if (NUMS.includes(calcNum)) { // create string of numbers, add string to var eq
+    total += calcNum
+    document.getElementById("results").innerText = total
   }
-  if (calcNum === OPS) { // add math equation to string
+  if (OPS.includes(calcNum)) { // add math equation to string
+    total += calcNum
+    document.getElementById("results").innerText = total
 
   }
-  if (calcNum === "=") { // run math (string [a][b][c])- log result to id:results
-    doMath()
-    return
+  if (calcNum === "=") { // run math- log result to id:results
+    document.getElementById("results").innerText = eval(total)
   }
-}
-
-
-function doMath() {
-
 }
